@@ -11,11 +11,12 @@
 <body>
     <div class="border">
         <div class="center">
-            <input id="result" class="text" type="text" onclick="this.style.backgroundColor = 'red'" onmouseout="this.style.backgroundColor = 'gray'">
+            <input id="result" class="text" type="text" onclick="this.style.backgroundColor = 'red'"
+                onmouseout="this.style.backgroundColor = 'gray'">
         </div>
         <br>
         <div class="center">
-            <button class="width" onclick="clearResult()" >C</button>
+            <button class="width" onclick="clearResult()">C</button>
         </div>
         <div class="center">
             <button class="size" onclick="getNumber('7')">7</button>
@@ -35,13 +36,17 @@
             <button class="size" onclick="getNumber('3')">3</button>
             <button class="pilas" onclick="getNumber('+')">+</button>
         </div>
+        <div>
+            <button id="width"  class="lambai" onclick="getNumber('0')">0</button>
+            <button id="pilas" class="pilas" onclick="getNumber('/')">÷</button>
+        </div>
         <div class="center1">
-            <button class="lambai" onclick="getNumber('0')">0</button>
             <button class="lambai" onclick="getResult()">=</button>
-            <button id="height" class="lambai" onclick="backspace()">⌫</button>                     
+            <button id="height" class="lambai" onclick="backspace()">⌫</button>
         </div>
     </div>
 
 </body>
 <script src="app.js"></script>
+
 </html>
