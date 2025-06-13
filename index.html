@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="border">
+        <div class="center">
+            <input id="result" class="text" type="text" onclick="this.style.backgroundColor = 'red'" onmouseout="this.style.backgroundColor = 'gray'">
+        </div>
+        <br>
+        <div class="center">
+            <button class="width" onclick="clearResult()" >C</button>
+        </div>
+        <div class="center">
+            <button class="size" onclick="getNumber('7')">7</button>
+            <button class="size" onclick="getNumber('8')">8</button>
+            <button class="size" onclick="getNumber('9')">9</button>
+            <button class="pilas" onclick="getNumber('*')">X</button>
+        </div>
+        <div class="center">
+            <button class="size" onclick="getNumber('4')">4</button>
+            <button class="size" onclick="getNumber('5')">5</button>
+            <button class="size" onclick="getNumber('6')">6</button>
+            <button class="pilas" onclick="getNumber('-')">-</button>
+        </div>
+        <div class="center">
+            <button class="size" onclick="getNumber('1')">1</button>
+            <button class="size" onclick="getNumber('2')">2</button>
+            <button class="size" onclick="getNumber('3')">3</button>
+            <button class="pilas" onclick="getNumber('+')">+</button>
+        </div>
+        <div class="center1">
+            <button class="lambai" onclick="getNumber('0')">0</button>
+            <button class="lambai" onclick="getResult()">=</button>
+            <button id="height" class="lambai" onclick="backspace()">⌫</button>                     
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
